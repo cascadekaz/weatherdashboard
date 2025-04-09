@@ -1,0 +1,116 @@
+
+@import "tailwindcss";
+
+body {
+  background-color: rgb(243 244 246); 
+  color: rgb(17 24 39); 
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dark body {
+  background-color: rgb(17 24 39); 
+  color: rgb(243 244 246); 
+}
+
+.dark .search-input {
+  background-color: rgb(17 24 39);
+  color: rgb(243 244 246); 
+  border-color: #9CA3AF;
+}
+.search-input {
+  background-color: rgb(243 244 246);
+  color: #111827; 
+  border-color: #9CA3AF; 
+}
+
+
+.recentsearches{
+  background-color: rgb(229 231 235); 
+  border-radius: 9999px; 
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  transition: background-color 0.2s;
+}
+
+.recentsearches:hover {
+  background-color: rgb(209 213 219); 
+}
+
+/* Dark mode styles */
+.dark .recentsearches {
+  background-color: rgb(55 65 81); 
+}
+
+.dark .recentsearches:hover {
+  background-color: rgb(75 85 99); 
+}
+
+/* Forecast Component Styles */
+.forecast-container {
+  margin-top: 1.5rem; 
+}
+
+.forecast-title {
+  font-size: 1.25rem; 
+  font-weight: 600; 
+  margin-bottom: 1rem; 
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 1rem; 
+}
+
+.forecast-day-card {
+  background-color: rgb(229 231 235);
+  border-radius: 0.5rem; 
+  padding: 1rem; 
+  text-align: center;
+}
+
+.forecast-day-name {
+  font-weight: 500; 
+}
+
+.forecast-icon {
+  margin: 0.5rem auto; 
+}
+
+.forecast-temp {
+  font-size: 1.125rem; 
+  font-weight: 600; 
+}
+
+.forecast-description {
+  font-size: 0.875rem; 
+  color: #4b5563; 
+  text-transform: capitalize;
+}
+
+.loading-forecast {
+  text-align: center;
+  padding: 1rem 0; 
+}
+
+.forecast-error {
+  text-align: center;
+  padding: 1rem 0; 
+  color: #ef4444; 
+}
+
+/* Dark Mode Styles */
+.dark .forecast-day-card {
+  background-color: #1f2937; 
+}
+
+.dark .forecast-description {
+  color: #9ca3af; 
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .forecast-grid {
+    grid-template-columns: repeat(5, 1fr); 
+  }
+}
