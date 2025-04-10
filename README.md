@@ -51,10 +51,10 @@ A responsive weather application built with React that displays current weather 
    ```bash
    git clone https://github.com/yourusername/weather-dashboard.git
    cd weather-dashboard
-2. Clone the repository:
+2. Install dependencies:
    ```bash
    npm install
-3. Clone the repository:
+3. Start the development server:
    ```bash
    npm run dev
 
